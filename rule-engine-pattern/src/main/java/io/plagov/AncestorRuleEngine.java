@@ -19,7 +19,7 @@ public class AncestorRuleEngine {
             new AncestorWithAttributeAndValueRule()
     );
 
-    public AncestorResult process(String selector, int index) {
+    public AncestorResult process(String selector) {
         return rules
                 .stream()
                 .map(rule -> rule.evaluate(selector))
